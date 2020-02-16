@@ -95,7 +95,7 @@ export IMAGE_TAG=${RANDOM}
 appsody deploy \
   --tag "${NAMESPACE}/${IMAGE_NAME}:${IMAGE_TAG}" \
   --push-url "${IMAGE_REGISTRY}" \
-  --pull-url "${INTERNAL_IMAGE_REGISTRY}"
+  --pull-url "${INTERNAL_IMAGE_REGISTRY}" \
   -n ${NAMESPACE}
 ----
 
@@ -108,7 +108,7 @@ export IMAGE_TAG=${RANDOM}
 appsody deploy \
   --tag "${NAMESPACE}/${IMAGE_NAME}:${IMAGE_TAG}" \
   --push-url "${IMAGE_REGISTRY}" \
-  --pull-url "${INTERNAL_IMAGE_REGISTRY}"
+  --pull-url "${INTERNAL_IMAGE_REGISTRY}" \
   -n ${NAMESPACE} --knative
 ----
 
